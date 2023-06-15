@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('count', 'CounterController@count');
+Route::get('count/{date_clicked}', 'CounterController@count');
+Route::post('click', 'CounterController@click');
