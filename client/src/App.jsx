@@ -32,7 +32,7 @@ const App = () => {
                     <Typography sx= {{ textAlign: 'center' }}>This project shows a number that increases each time the button is pressed.</Typography>
                 </Stack>
                 <Stack direction= "column" justifyContent= "flex-start" alignItems= "center" spacing= { 3 }>
-                    <Typography variant= "h1">{ counts !== undefined ? counts.length : 0 }</Typography>
+                    <Typography variant= "h1" data-testid= "counter">{ counts !== undefined ? counts.length : 0 }</Typography>
                     { !isLoading ? <Box sx= { btntxt } onClick= { () => clicking({ date_clicked: date }) }>Click Me!</Box> : '' }
                 </Stack>
             </Stack>
